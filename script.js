@@ -53,7 +53,11 @@ async function Userdata() {
 
       var Url = document.createElement("p");
       Url.setAttribute('id', 'link');
-
+      var giturl=document.getElementById("giturl");
+      var git = document.createElement("p");
+      git.setAttribute('id', 'gitlink');
+      git.innerHTML=`<b>${data.html_url}</b>`
+      giturl.appendChild(git)
       newChildDiv2.appendChild(Name);
       newChildDiv2.appendChild(Bio);
       newChildDiv2.appendChild(Location);
